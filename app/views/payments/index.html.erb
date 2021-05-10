@@ -1,0 +1,75 @@
+<body>
+  <p id="notice"><%= notice %></p>
+
+<h2>Payments Made</h2>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th>Sender name   </th>
+      <th>Recipient name   </th>
+      <th>Recipient email   </th>
+      <th>Amount   </th>
+      <th>Comment   </th>
+      <th>User  </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @payments.each do |payment| %>
+      <%  if payment.sender.name==current_user.name %> 
+        <tr>
+          <td><%= payment.sender.name %></td>
+          <td><%= payment.recipient.name %></td>
+          <td><%= payment.recipient.email %></td>
+          <td>$<%= payment.amount %></td>
+          <td><%= payment.comment %></td>
+        
+          <td><%= link_to 'Show', payment %></td>
+          <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
+          <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<h2>Payments recieved</h2>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th>Sender name   </th>
+      <th>Recipient name   </th>
+      <th>Recipient email   </th>
+      <th>Amount   </th>
+      <th>Comment   </th>
+      <th>User  </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @payments.each do |payment| %>
+      <%  if payment.recipient.name==current_user.name %> 
+        <tr>
+          <td><%= payment.sender.name %></td>
+          <td><%= payment.recipient.name %></td>
+          <td><%= payment.recipient.email %></td>
+          <td>$<%= payment.amount %></td>
+          <td><%= payment.comment %></td>
+        
+          <td><%= link_to 'Show', payment %></td>
+          <td><%= link_to 'Edit', edit_payment_path(payment) %></td>
+          <td><%= link_to 'Destroy', payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Payment', new_payment_path %>
+</body>

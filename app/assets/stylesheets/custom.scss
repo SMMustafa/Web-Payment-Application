@@ -1,0 +1,225 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+body {
+padding-top: 120px;
+background-color: rgb(90,180,240);
+}
+.center {
+text-align: center;
+}
+.center h1 {
+margin-bottom: 10px;
+}
+.title{color: yellow;}
+footer{border-top: 2px solid grey;
+       color: #777;
+       margin-top: 25px;
+}
+footer a:hover{color:yellow;}
+footer small{float: left;}
+footer ul{float:right;
+          list-style: none;
+}
+footer ul li{float: left;
+             margin-left: 20px;
+}
+
+/* index view styles */
+.users{list-stye:none; margin: 5px;}
+.users li{padding:30px;
+          border-bottom: 1px solid grey;}
+
+.background {
+padding-top: 120px;
+background-color: #dedede;
+}
+
+div.container {
+  
+}
+
+h1.title{
+    color: purple;
+    font-family: "Sofia", sans-serif;
+    text-decoration-style: wavy;
+
+}
+
+li.item{
+    border: 0.2em solid purple;
+    
+}
+
+.purple{
+    color:purple;
+}
+
+.users{list-stye:none; margin: 2px}
+
+.users li{padding:30px;
+border: 1px solid purple;}
+
+li.a{
+     border: 0.15em solid purple;
+     display: inline;
+     color: grey;
+     padding-right: 1.7em;
+     font-size: 1.2em;
+     font-family: "Sofia", sans-serif;
+     
+}
+
+
+// body{
+//     background: linear-gradient(120deg, #9370db,#000);
+// }
+
+small{
+    padding-left:1em;
+}
+
+span.right{
+    text-align: right;
+    padding-left: 75em;
+}
+
+div.box1 {
+  width: 300px; padding: 50px; border: 5px solid white; margin: 0px; font-size: 150%; float: left; background-color: rgb(147,112,219);
+}
+ 
+div.box2 {
+  width: 300px; padding: 50px; border: 5px solid white; margin: 0px; font-size: 150%; float: right; background-color: rgb(147,112,219);
+}
+
+.floatR{float: right;
+        padding-right: 8px;
+        padding-left: 4px;
+}
+.floatL{float: left;
+        padding-right: 8px;
+        padding-left: 4px;
+}
+
+.homebody{
+    
+        font-family: "Sofia", sans-serif;
+}
+
+div h2 {
+        font-family: "Sofia", sans-serif;
+}
+
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+//E-wallet Template(html and css) credits: Surendhar Nagarajan
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.iphone {
+  margin: 10px;
+  height: 60em;
+  width: 375px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(1);
+  transform-origin: top center;
+}
+
+.header2 {
+  height: 30%;
+  background-color: #44B0A0;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+   overflow: hidden;
+}
+
+.header2::before{
+  content:"";
+  height: 200px;
+  width: 200px;
+  background-color: #53b5a8;
+  border-radius: 50%;
+  position:absolute;
+  top: -60px;
+  left: -100px;
+  z-index: 2;
+}
+
+.header2::after {
+  content:"";
+  height: 100px;
+  width: 100px;
+  background-color: #53b5a8;
+  border-radius: 50%;
+  position:absolute;
+  right: -20px;
+  bottom: -30px;
+  z-index: 2;
+ 
+}
+
+.header2-summary {
+  display: flex;
+  flex-direction: column;
+font-family: 'Montserrat', sans-serif;
+  color: white;
+  z-index: 3;
+}
+
+.summary-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.summary-balance {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.8rem;
+  
+}
+
+.summary-text-2 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+
+.btn-group {
+	margin: 2.2em 0;
+}
+
+.btn-group .btn {
+	margin: 2em ;
+	border-radius: 20px !important;
+	font-size: 12px;
+}
+
+
+div p{
+    color: purple;
+    font-size: 1em;
+    
+    
+}

@@ -1,0 +1,52 @@
+<% provide(:title, @user.name) %>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
+<div class="row">
+   <aside class="col-md-4">
+       <section class="user_info">
+           <h1 class=homebody> Hi, <%= @user.name %> </h1>
+           <span class=floatR>
+          
+       
+           
+           </span>
+           
+       </section>
+   </aside>
+</div>
+
+<body>
+  <div class="container2">
+    <div class="iphone">
+      <div class="header2">
+        <div class="header2-summary">
+          <div class="summary-text">
+            Your Balance
+          </div>
+          <div class="summary-balance">
+            $<%= @user.balance %>
+          </div>
+          <div class="btn-group text-center">
+			<button type="button" class="btn btn-outline-light"><p>Add Money</p></button>
+			<button type="button" class="btn btn-outline-light"><p>Widthdraw</p></button>
+			</div>
+          
+        </div>
+        <!--<div class="user-profile">-->
+        <!--  <img src="https://pbs.twimg.com/profile_images/1089189690773712897/bCJr7IzK_400x400.jpg" class="user-photo">-->
+        <!--</div>-->
+      </div>
+  
+         
+     
+
+         
+
+        
+    
+
+    </div>
+  </div>
+  
+</body>

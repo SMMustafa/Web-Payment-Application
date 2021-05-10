@@ -1,0 +1,44 @@
+<%= form_with(model: payment, local: true) do |form| %>
+  <% if payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+
+      <ul>
+        <% payment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!--<div class="field">-->
+  <!--  form.label :sender_id  %> <!--form.label :recipient_name-->
+  <!--  form.text_area :sender_id  %>   <!-- #form.text_area :recipient_name-->
+  <!--</div>-->
+
+  <h1>  Welcome, <%=  current_user.name %> </h1>
+  
+  <div class="field">
+    <%= form.label :recipient %>
+    <%= form.text_area :recipient_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount %>
+    <%= form.text_field :amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comment %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <!--<div class="field">-->
+  <!-- form.label :user_id -->  
+  <!--   form.number_field :user_id-->
+  <!--</div>-->
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

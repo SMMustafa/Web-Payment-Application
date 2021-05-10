@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Recipient name:</strong>
+  <%= @payment.recipient.name %>
+</p>
+
+<p>
+  <strong>Email:  </strong>
+  <%= @payment.recipient.email %>
+</p>
+
+<p>
+  <strong>Amount:  </strong>
+  $<%= @payment.amount %>
+</p>
+
+<p>
+  <strong>Comment:  </strong>
+  <%= @payment.comment %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>

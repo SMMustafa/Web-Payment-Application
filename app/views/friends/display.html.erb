@@ -1,0 +1,34 @@
+<% provide(:title, 'Search Results') %>
+<h1>Searched Results</h1>
+
+
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <!--  User-->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% for searched in @f %>
+      
+        <tr>
+          <td><%= searched.name %></td>
+          <td><%= searched.email %></td>
+          <!--<td> friend.user_id </td> -->
+          <td><%= link_to 'Show', searched %></td>
+          <td><%= link_to 'Edit', edit_friend_path(searched) %></td>
+          <td><%= link_to 'Destroy', searched, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Friend', new_friend_path %>

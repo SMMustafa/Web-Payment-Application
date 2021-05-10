@@ -1,7 +1,7 @@
 # Web Payment Application
 Developed a Rails application called Liquidate
 
-#Functionalities
+# Functionalities
 1. transfer funds between different accounts.
 2. sign-in/signup
 3. creating and searching through a friend’s list
